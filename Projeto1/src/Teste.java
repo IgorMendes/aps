@@ -5,9 +5,22 @@ import org.junit.Test;
 
 public class Teste {
 
-	@Test
-	public void test() {
-		fail("Not yet implemented");
+
+		
+		private RG validarg = new RG();
+		@Test
+		public void testIsValidaRG(){
+		assertFalse(validarg.isValidaRG("128641011"));
+		assertFalse(validarg.isValidaRG(null));
+		assertFalse(validarg.isValidaRG(""));
+		assertFalse(validarg.isValidaRG("489234892348"));
+	
+
+
+		
+		
+	
 	}
 
 }
+ 
